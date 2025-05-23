@@ -1,0 +1,131 @@
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./tennis\ court.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.pong-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pong-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./tennis court.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+
+.pong-canvas {
+  position: relative;
+  z-index: 2;
+  border: 2px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+.hero-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.text-container.mobile {
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  color: white;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tennis-ball {
+  width: 80px;
+  height: 80px;
+  background-image: url('./tennis.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 600px) {
+  .background-image.mobile {
+    width: 100vh;
+    height: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg) scale(1.2);
+  }
+  
+  .tennis-ball {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .hero-text {
+    font-size: 2.5rem !important;
+  }
+  .pong-container {
+  flex-direction: column;
+}
+
+.pong-container.mobile::before {
+  width: 100vh;
+  height: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg) scale(1.2);
+}
+
+.pong-canvas {
+ transform-origin: center;
+  width: 100vh;
+  height: 100vw;
+}
+} 

@@ -1,0 +1,160 @@
+.about-section {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.coach-image {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 20px 0;
+}
+
+.coach-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.3s ease;
+}
+
+.coach-image:hover img {
+  transform: scale(1.03);
+}
+
+.social-links-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-links .MuiIconButton-root {
+  color: #1976d2;
+  transition: all 0.3s ease;
+  font-size: 3.5rem;    /* Increased from 1.5rem */
+  padding: 20px;        /* Increased from 12px */
+}
+
+.social-links .MuiIconButton-root:hover {
+  transform: translateY(-3px);
+  color: #1565c0;
+  background-color: rgba(25, 118, 210, 0.1);
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(4, min-content); /* Each column only as wide as its content */
+  gap: 2rem;
+  justify-content: center; /* Center the whole grid horizontally */
+  align-items: center;
+}
+
+.achievement-card {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;        
+  height: 200px;      
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-icon {
+  font-size: 3rem;      /* Fixed icon size */
+  color: #1976d2;
+  margin-bottom: 1rem;
+  width: 56px;          /* Ensures all icons are same width */
+  height: 56px;         /* Ensures all icons are same height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .coach-image {
+    height: 400px;
+    margin: 15px 0;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .social-links .MuiIconButton-root {
+    font-size: 2.5rem;   /* Make icons bigger on tablets */
+    padding: 16px;
+  }
+
+  .achievements {
+    grid-template-columns: repeat(3, 1fr); /* 2 columns on tablets */
+    gap: 1.2rem;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .coach-image {
+    height: 350px;
+    margin: 10px 0;
+  }
+
+  .social-links {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .social-links .MuiIconButton-root {
+    font-size: 2rem;   /* Bigger than before on mobile */
+    padding: 12px;
+  }
+
+  .achievements {
+    grid-template-columns: repeat(2, 1fr); /* Stack on mobile */
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+}

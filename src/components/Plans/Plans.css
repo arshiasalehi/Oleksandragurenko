@@ -1,0 +1,108 @@
+.plans-section {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.membership-toggle {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.member-message {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.book-now-button {
+  margin-top: 2rem !important;
+  padding: 1rem 3rem !important;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pricing-card {
+  position: relative;
+  overflow: visible !important;
+  transition: transform 0.3s ease !important;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card.popular {
+  border: 2px solid #1976d2;
+}
+
+.pricing-card.best-deal {
+  border: 2px solid #d32f2f;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: #d32f2f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popular .badge {
+  background-color: #1976d2;
+}
+
+.price {
+  margin: 1.5rem 0 !important;
+  color: #1976d2;
+  font-weight: bold !important;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.features-list li {
+  padding: 0.5rem 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li::before {
+  content: "✓";
+  color: #1976d2;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .plans-section {
+    padding: 60px 0;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .membership-toggle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} 
