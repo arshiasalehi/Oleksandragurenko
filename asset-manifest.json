@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Oleksandragurenko/static/css/main.35cb226c.css",
+    "main.js": "/Oleksandragurenko/static/js/main.89db8b09.js",
+    "static/js/453.1407b060.chunk.js": "/Oleksandragurenko/static/js/453.1407b060.chunk.js",
+    "static/media/Oleksandra Guerenko .jpg": "/Oleksandragurenko/static/media/Oleksandra Guerenko .c90178460e394e2ef887.jpg",
+    "static/media/tennis.png": "/Oleksandragurenko/static/media/tennis.3561be0f741c42e880ce.png",
+    "static/media/tennis court.jpg": "/Oleksandragurenko/static/media/tennis court.32a625f4a07fc42b02e3.jpg",
+    "index.html": "/Oleksandragurenko/index.html",
+    "main.35cb226c.css.map": "/Oleksandragurenko/static/css/main.35cb226c.css.map",
+    "main.89db8b09.js.map": "/Oleksandragurenko/static/js/main.89db8b09.js.map",
+    "453.1407b060.chunk.js.map": "/Oleksandragurenko/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35cb226c.css",
+    "static/js/main.89db8b09.js"
+  ]
+}
